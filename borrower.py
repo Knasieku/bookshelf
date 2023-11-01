@@ -6,4 +6,11 @@ class Borrower:
         self.email=email
         self.location=location
     
+    borrower_details=[]   
+
+    def save_details(self):
+        Borrower.borrower_details.append(self)
     
+    def delete_details(self):
+        Borrower.borrower_details.remove(self)
+        
